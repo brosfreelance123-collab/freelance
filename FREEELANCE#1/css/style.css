@@ -1,0 +1,39 @@
+:root {
+    --choco: #3E2723;
+    --cream: #FFF8E1;
+    --pink: #D81B60;
+    --white: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Poppins', sans-serif; background: var(--cream); color: var(--choco); scroll-behavior: smooth; }
+
+.container { padding: 80px 5%; }
+.section-title { text-align: center; margin-bottom: 40px; font-size: 2.5rem; }
+
+/* Navbar */
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: var(--white); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.logo { font-weight: 900; font-size: 1.5rem; color: var(--pink); }
+.badge { padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; color: white; background: #777; }
+
+/* Hero Section */
+.hero { height: 80vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://lh3.googleusercontent.com/p/AF1QipOuewS_0InmuDGI2mTcWTsVSSiWi3ZEfeVM3DMU=s1360-w1360-h1020-rw'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
+.hero h1 { font-size: 3.5rem; margin-bottom: 20px; }
+.hero-btns { display: flex; gap: 20px; justify-content: center; margin-top: 30px; }
+.btn-primary { background: var(--pink); color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+.btn-secondary { border: 2px solid white; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+
+/* Categories */
+.categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+.cat-card { background: white; padding: 40px; text-align: center; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.cat-card i { font-size: 3rem; color: var(--pink); margin-bottom: 20px; }
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+.gallery-grid img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; transition: 0.3s; }
+.gallery-grid img:hover { transform: scale(1.03); }
+
+/* WhatsApp Button */
+.whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; }
+
+.footer { background: var(--choco); color: white; text-align: center; padding: 40px; }
